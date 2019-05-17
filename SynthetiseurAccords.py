@@ -2,9 +2,11 @@ from sense_hat import SenseHat
 from time import sleep
 import pygame
 import os
-#Created by Marco G @Dragonspeed3000
-os.chdir("/home/pi/marco/sons")
 
+#Created by Marco G @Dragonspeed3000
+#GNU General Public License
+
+os.chdir("/home/pi/InstruSon")
 sense = SenseHat()
 
 X = [255, 255, 255]
@@ -148,7 +150,6 @@ modifInstru = False
 selNote = 0
 nbInstru = 4
 selInstru = 0
-ecouteMuse = 0
 listeSelec = []
 listeInstru = ["Cla", "Trb", "Gtr", "Vl"]
 listeSound = []
@@ -189,7 +190,6 @@ while (True):
 			listeSelec.append([selInstru, selNote])
 
 	if ((event.direction == "middle") and (event.action == "held")):
-		ecouteMuse = 1
 		# On joue les sons
 		for choix in listeSelec:
 			nom = str(choix[0]+1)+"_"+str(choix[1]+1)+".ogg"
