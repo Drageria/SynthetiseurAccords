@@ -6,7 +6,7 @@ import os
 #Created by Marco G @Dragonspeed3000
 #GNU General Public License
 
-os.chdir("/home/pi/InstruSon")
+os.chdir("InstruSon")
 sense = SenseHat()
 
 X = [255, 255, 255]
