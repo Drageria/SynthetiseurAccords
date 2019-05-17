@@ -2,7 +2,7 @@ from sense_hat import SenseHat
 from time import sleep
 import pygame
 import os
-
+#Created by Marco G @Dragonspeed3000
 os.chdir("/home/pi/marco/sons")
 
 sense = SenseHat()
